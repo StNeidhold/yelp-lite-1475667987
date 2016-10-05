@@ -1,6 +1,8 @@
 class Restaurant < ApplicationRecord
   # Direct associations
 
+  belongs_to :neighborhood
+
   has_many   :ownerships,
              :foreign_key => "retaurant_id",
              :dependent => :destroy
