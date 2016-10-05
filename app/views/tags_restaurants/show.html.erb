@@ -1,0 +1,28 @@
+<div class="page-header">
+  <h3>Tags Restaurant #<%= @tags_restaurant.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Restaurant</dt>
+      <dd><%= @tags_restaurant.restaurant_id %></dd>
+
+      <dt>Tags</dt>
+      <dd><%= @tags_restaurant.tags_id %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/tags_restaurants" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/tags_restaurants/<%= @tags_restaurant.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_tags_restaurant/<%= @tags_restaurant.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>
